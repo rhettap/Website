@@ -25,7 +25,7 @@ with st.sidebar:
 if selected == "Home":
     with open("media/animation.json") as source:
        animation = json.load(source)
-    st_lottie(animation,loop=True)
+    st_lottie(animation,width=300,height=300)
 
 #------------OLD PROJECTS----------------------------------------
     
