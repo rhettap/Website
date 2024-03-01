@@ -1,5 +1,5 @@
 import streamlit as st
-from config.sidebar_style import sidebar_background_css
+from styles.sidebar_style import sidebar_background_css
 #from streamlit_extras.app_logo import add_logo
 from streamlit_option_menu import option_menu
 from streamlit_card import card
@@ -26,6 +26,7 @@ if selected == "Home":
     with open("media/animation.json") as source:
        animation = json.load(source)
     st_lottie(animation,width=300,height=300)
+
 
 #------------OLD PROJECTS----------------------------------------
     
@@ -90,7 +91,7 @@ elif selected == "Contact":
         with open(file_name) as f:
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    local_css("config/style.css")
+    local_css("styles/style.css")
     for i in range(18):
         st.text("")
     my_video = st.link_button(label="Find me on Myspace",url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
