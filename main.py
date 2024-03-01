@@ -1,6 +1,6 @@
 import streamlit as st
 from config.sidebar_style import sidebar_background_css
-from streamlit_extras.app_logo import add_logo
+#from streamlit_extras.app_logo import add_logo
 from streamlit_option_menu import option_menu
 from streamlit_card import card
 from streamlit_lottie import st_lottie
