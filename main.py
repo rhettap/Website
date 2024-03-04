@@ -92,9 +92,19 @@ elif selected == "Contact":
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
     local_css("styles/style.css")
-    for i in range(18):
+
+    for i in range(8):
         st.text("")
-    my_video = st.link_button(label="Find me on Myspace",url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    
+    st.write("Download my Resume")
+    with open ("media/resume.pdf", "rb") as f:
+        resume_bytes = f.read()
+        st.download_button(label="Resume", data=resume_bytes, file_name= "Rhett_Palmore_Resume")
+    # st.download_button(label="Resume",data=resume,file_name="Rhett_Palmore_Resume")
+
+    # for i in range(18):
+    #     st.text("")
+    # my_video = st.link_button(label="Find me on Myspace",url="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 
 #-------ABOUT--------------------------------------------------
     
