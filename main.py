@@ -114,6 +114,7 @@ elif selected == "About":
     st.image("media/teaching.png")
     st.image("media/teaching2.png")
     st.image("media/teaching3.JPG")
+    st.image("media/vietnam.png")
     video_file_1= open('media/latantha.mp4','rb')
     video_file_2= open('media/classroom1.MP4','rb')
     video_file_3= open('media/classroom2.MP4','rb')
