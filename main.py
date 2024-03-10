@@ -23,7 +23,7 @@ with st.sidebar:
 #------------HOME----------------------------------------
 
 if selected == "Home":
-    home1, home2 = st.columns(2)
+    #home1, home2 = st.columns(2)
     with open("media/animation.json") as source:
        animation = json.load(source)
     st_lottie(animation,width=300,height=300)
@@ -33,7 +33,6 @@ if selected == "Home":
     
 
 elif selected == "Data Projects":
-
     st.title("New Data Projects")
     st.write("Coming soon.......")
     for i in range(5):
