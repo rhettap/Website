@@ -13,7 +13,7 @@ with st.sidebar:
     st.sidebar.image("media/logo.png",)
     selected = option_menu(
                 menu_title="Navigation",
-                options= ["Home","Old Projects","Contact","About"],
+                options= ["Home","Data Projects","Contact","About"],
                 default_index=0,
                 styles={
                     "container":{"background-color": "#BDBDB8"},
@@ -31,7 +31,7 @@ if selected == "Home":
 #------------OLD PROJECTS----------------------------------------
     
 
-elif selected == "Old Projects":
+elif selected == "Data Projects":
     st.title(f"🏴‍☠️ These be me old projects 🏴‍☠️")
     col1, col2, col3  = st.columns(spec=3,) 
 
