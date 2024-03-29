@@ -5,6 +5,7 @@ from streamlit_option_menu import option_menu
 from streamlit_card import card
 from streamlit_lottie import st_lottie
 import json
+import time
 import base64
 st.set_page_config(layout="wide")
 st.markdown(sidebar_background_css("media/background.jpg"), unsafe_allow_html=True)
@@ -23,11 +24,11 @@ with st.sidebar:
 #------------HOME----------------------------------------
 
 if selected == "Home":
-    #home1, home2 = st.columns(2)
+    #st.write()
     with open("media/animation.json") as source:
        animation = json.load(source)
     st_lottie(animation,width=300,height=300)
-   #home2.write("hi")
+
 
 #------------OLD PROJECTS----------------------------------------
     
@@ -124,6 +125,10 @@ elif selected == "About":
     video_file_1= open('media/latantha.mp4','rb')
     video_file_2= open('media/classroom1.MP4','rb')
     video_file_3= open('media/classroom2.MP4','rb')
-    st.video(video_file_1.read())
-    st.video(video_file_2.read())
-    st.video(video_file_3.read())
+    st.page_link(page="https://youtu.be/7Jsc4HOLGWk", label="My Cafe")
+    st.page_link(page='https://youtu.be/9igSNev29PE', label="Classroom Video 1")
+    st.page_link(page='https://youtu.be/Grkshj-grHc', label="Classroom Video 2")
+    # st.video(video_file_1.read()
+    # st.video(video_file_1.read())
+    # st.video(video_file_2.read())
+    # st.video(video_file_3.read())
