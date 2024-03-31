@@ -122,13 +122,37 @@ elif selected == "About":
     st.image("media/teaching2.png")
     st.image("media/teaching3.JPG")
     st.image("media/vietnam.png")
-    video_file_1= open('media/latantha.mp4','rb')
-    video_file_2= open('media/classroom1.MP4','rb')
-    video_file_3= open('media/classroom2.MP4','rb')
-    st.page_link(page="https://youtu.be/7Jsc4HOLGWk", label="My Cafe")
-    st.page_link(page='https://youtu.be/9igSNev29PE', label="Classroom Video 1")
-    st.page_link(page='https://youtu.be/Grkshj-grHc', label="Classroom Video 2")
-    # st.video(video_file_1.read()
-    # st.video(video_file_1.read())
-    # st.video(video_file_2.read())
-    # st.video(video_file_3.read())
+
+    col4, col5, col6  = st.columns(spec=3) 
+    with col4:
+        with open("media/latantha.png", "rb") as f:
+                    data = f.read()
+                    encoded = base64.b64encode(data)
+                    data = "data:image/png;base64," + encoded.decode("utf-8")
+
+        card(title="My Cafe",
+            text="A tour of Latantha Cafe.",
+            image= data,
+            url="https://youtu.be/7Jsc4HOLGWk")
+    
+    with col5:
+        with open("media/classroom1.jpeg", "rb") as f:
+                    data = f.read()
+                    encoded = base64.b64encode(data)
+                    data = "data:image/png;base64," + encoded.decode("utf-8")
+
+        card(title="Teacher! Bathroom!",
+            text="A fun learning video in the classroom",
+            image= data,
+            url="https://youtu.be/9igSNev29PE")
+    
+    with col6:
+        with open("media/classroom2.jpeg", "rb") as f:
+                    data = f.read()
+                    encoded = base64.b64encode(data)
+                    data = "data:image/png;base64," + encoded.decode("utf-8")
+
+        card(title="Homework?...Noo!",
+            text="A fun learning video in the classroom",
+            image= data,
+            url="https://youtu.be/Grkshj-grHc")
