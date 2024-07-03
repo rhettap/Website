@@ -134,16 +134,16 @@ elif selected == "About":
             image= data,
             url="https://youtu.be/7Jsc4HOLGWk")
     
-    with col5:
-        with open("media/classroom1.jpeg", "rb") as f:
-                    data = f.read()
-                    encoded = base64.b64encode(data)
-                    data = "data:image/png;base64," + encoded.decode("utf-8")
+    # with col5:
+    #     with open("media/classroom1.jpeg", "rb") as f:
+    #                 data = f.read()
+    #                 encoded = base64.b64encode(data)
+    #                 data = "data:image/png;base64," + encoded.decode("utf-8")
 
-        card(title="Teacher! Bathroom!",
-            text="A fun learning video in the classroom",
-            image= data,
-            url="https://youtu.be/9igSNev29PE")
+    #     card(title="Teacher! Bathroom!",
+    #         text="A fun learning video in the classroom",
+    #         image= data,
+    #         url="https://youtu.be/9igSNev29PE")
     
     with col6:
         with open("media/classroom2.jpeg", "rb") as f:
