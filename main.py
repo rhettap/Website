@@ -104,7 +104,7 @@ elif selected == "Contact":
         st.text("")
     
     st.write("Download my Resume")
-    with open ("media/resume.pdf", "rb") as f:
+    with open ("media/RhettPalmoreResume2025.pdf", "rb") as f:
         resume_bytes = f.read()
         st.download_button(label="Resume", data=resume_bytes, file_name= "Rhett_Palmore_Resume")
     # st.download_button(label="Resume",data=resume,file_name="Rhett_Palmore_Resume")
