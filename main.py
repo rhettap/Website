@@ -121,7 +121,7 @@ elif selected == "About":
     st.image("media/teaching.png")
     st.image("media/teaching2.png")
     
-    st.image("media/vietnam.png")
+    #st.image("media/vietnam.png")
     #col4, col5, col6  = st.columns(spec=3) 
     col4,col6 = st.columns(spec=2)
     with col4:
