@@ -116,7 +116,7 @@ elif selected == "Contact":
 #-------ABOUT--------------------------------------------------
     
 elif selected == "About": 
-    col1, col2 = st.columns(spec=3)
+    col1, col2 = st.columns(2)
 
     with col1: 
         st.image("media/cave2.png")
@@ -131,8 +131,8 @@ elif selected == "About":
         st.image("media/teaching2.png")
     
     #st.image("media/vietnam.png")
-    #col4, col5, col6  = st.columns(spec=3) 
-    col4,col6 = st.columns(spec=2)
+    #col4, col5, col6  = st.columns(2) 
+    col4,col6 = st.columns(2)
     with col4:
         with open("media/latantha.png", "rb") as f:
                     data = f.read()
