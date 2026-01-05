@@ -116,16 +116,19 @@ elif selected == "Contact":
 #-------ABOUT--------------------------------------------------
     
 elif selected == "About": 
+    col1, col2 = st.columns(spec=3)
 
-    st.image("media/cave2.png")
-    st.image("media/whaleshark.png")
-    st.image("media/hobbiton.png")
-    st.image("media/greendragon.png")
-    st.image("media/motobike.png")
-    st.image("media/cave1.png")
-    st.image("media/komodo.png")
-    st.image("media/teaching.png")
-    st.image("media/teaching2.png")
+    with col1: 
+        st.image("media/cave2.png")
+        st.image("media/whaleshark.png")
+        st.image("media/hobbiton.png")
+        st.image("media/greendragon.png")
+        st.image("media/motobike.png")
+    with col2:
+        st.image("media/cave1.png")
+        st.image("media/komodo.png")
+        st.image("media/teaching.png")
+        st.image("media/teaching2.png")
     
     #st.image("media/vietnam.png")
     #col4, col5, col6  = st.columns(spec=3) 
