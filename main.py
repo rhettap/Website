@@ -117,7 +117,13 @@ elif selected == "Contact":
     
 elif selected == "About": 
 
+    st.image("media/cave2.png")
+    st.image("media/whaleshark.png")
+    st.image("media/hobbiton.png")
+    st.image("media/greendragon.png")
     st.image("media/motobike.png")
+    st.image("media/cave1.png")
+    st.image("media/komodo.png")
     st.image("media/teaching.png")
     st.image("media/teaching2.png")
     
