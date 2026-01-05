@@ -116,17 +116,25 @@ elif selected == "Contact":
 #-------ABOUT--------------------------------------------------
     
 elif selected == "About": 
-    col1, col2 = st.columns(2)
 
+    from PIL import Image, ImageOps
+
+    def load_image_fix_orientation(path):
+        image = Image.open(path)
+        image = ImageOps.exif_transpose(image)
+        return image
+        
+    col1, col2 = st.columns(2)
+    
     with col1: 
         st.image("media/cave2.png")
         st.image("media/whaleshark.png")
-        st.image("media/hobbiton.png")
+        st.image(load_image_fix_orientation("media/hobbiton.png"))
         st.image("media/greendragon.png")
         st.image("media/motobike.png")
     with col2:
-        st.image("media/cave1.png")
-        st.image("media/komodo.png")
+        st.image(load_image_fix_orientation("media/cave1.png"))
+        st.image(load_image_fix_orientation("media/komodo.png"))
         st.image("media/teaching.png")
         st.image("media/teaching2.png")
     
